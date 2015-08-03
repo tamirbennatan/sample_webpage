@@ -1,1 +1,1 @@
-web: gunicorn viz_tool:app --log-file=-
+web: gunicorn viz_tool:app

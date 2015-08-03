@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tamir's Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{url_for('static',filename='landpage/assets/css/main.css')}}" />
+		
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<!-- 		// <script src='carousel.js'></script> -->
+		<link rel= "stylesheet" href="{{url_for('static',filename= 'landpage/bootstrap.min.css')}}"/>
+		<script src='bootstrap.min.js' type= 'text/javascript'></script>
+
+		<link rel="stylesheet" href='{{url_for("static", filename="landpage/assets/css/main.css")}}' />
+		<link rel = 'stylesheet' href='bootstrap-lightbox/bootstrap-lightbox-min.css'?>
+		<script type="text/javascript" src="bootstrap-lightbox/bootstrap-lightbox-min.js"></script>
+		<link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+		<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<style>
+		/* Message flashing */
+			.flash {
+			  background-color: #1F2121 ;
+			  padding: 10px;
+			  margin-left: 20%
+			  width: 400px;
+			  text-align: center;
+			}
+			form label{color: #C2C2D6;}
+		</style>
+	</head>
+
+	<body>
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Me</a></li>
+					<li><a href="#work">Study</a></li>
+					<li><a href="#recent_work">My Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#find_me">Find Me</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u 12u(mobile)">
+							<span class="image fit"><img src="{{url_for('static', filename ='landpage/timi.jpg')}}"  /></span>
+						</div>
+						<div class="8u 12u(mobile)">
+							<header>
+
+								<h1>Hi. I'm <strong>Tamir Bennatan</strong>.</h1>
+							</header>
+							<p>Welcome to my webpage – a place for me to practice my front and back-end web developement, and a place for you to get to know me and get in touch.</p>
+							<a  class="button big scrolly " id='learn_more' href='#contact' >Get in touch.
+							</a>
+							<a  class="button big scrolly " id='resume' target='_blank' href="{{url_for('static', filename ='landpage/CVfinal.pdf')}}" >See my resumé.
+							</a>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- About -->
+
+			
+
+		<!-- Work -->
+			<div class="wrapper style2">
+				<article id="work">
+					<header>
+						<h2>This is what I study.</h2>
+						<p>Bachelor of Commerce, McGill University (expected 2018). Concentration in Operations Management, Minor Statistics for Management, Minor Concentration Computer Science.</p>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u(mobile)">
+								<section class="box style1">
+									<span class="icon featured fa fa-gears"></span>
+									<h3>Operations Management</h3>
+									<p>The study of the design, planning, control, coordination and improvement of business processes, with an emphasis on quantitative analysis and cross functional thinking.</p>
+								</section>
+							</div>
+							<div class="4u 12u(mobile)">
+								<section class="box style1">
+									<span class="icon featured fa fa-line-chart"></span>
+									<h3>Statistics</h3>
+									<p>The study of the collection, interpretation, and analysis of data – all of which are crucial in fields ranging from finance to data science.<br><br><br></p>
+								</section>
+							</div>
+							<div class="4u 12u(mobile)">
+								<section class="box style1">
+									<span class="icon featured fa-laptop fa"></span>
+									<h3>Computer Science</h3>
+									<p>A neccessary skill for almost any analytical role, this field has become a hobby of mine as well as an area of study. Most of what I have learned has been in my own time.<br><br></p>
+								</section>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p>I believe this interdiciplinary program will prepare me to apply advanced analytical methods to help make better business decisions.</p>
+						<hr>
+						<h2 id='recent_work'>Some of my recent work.</h2>
+						<p > This summer, I worked with a team of data scientists at Harvard's Institute of Quantitiative Social Science <a href = 'http://www.iq.harvard.edu/' target = '_blank'>(IQSS)</a>. There, I had a major role in building a data visualizations tool that is meant to augment the IQSS's <a href= 'http://dataverse.org/' target='_blank'> Dataverse Project </a> to give it visualization capability.</p> 
+						<a href='https://youtu.be/OzrECzPf95g' class="button scrolly" target= '_blank'><i style = 'margin-right: 9px;' class= 'fa fa-youtube-play'></i >Watch a 4 minute User Guide</a>
+						<a href="http://127.0.0.1:5000/web_page/" data-featherlight-loading='<i> Loading... </i>'  data-featherlight="iframe" data-featherlight-iframe-height ='850'data-featherlight-iframe-width='1150' class="button scrolly"><i style = 'margin-right: 9px;' class='fa fa-bar-chart'></i>    See my recent work</a>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Portfolio -->
+			
+
+		<!-- Contact -->
+			<div class="wrapper style4">
+				<article id="contact" class="container 75%">
+					
+					<div>
+						{% block content %}
+						<header>
+						  <h2>Get in touch.</h2>
+						  <p>Questions? Just want to say hi? I'd love for you to reach out.</p>
+						</header>
+
+						{% if success %}
+						    <p>Thank you for your message. We'll get back to you shortly.</p>
+						 
+						  {% else %}
+						 
+						    {% for message in form.name.errors %}
+						      <div class="flash">{{ message }}</div>
+						    {% endfor %}
+						 
+						    {% for message in form.email.errors %}
+						      <div class="flash">{{ message }}</div>
+						    {% endfor %}
+						 
+						    {% for message in form.subject.errors %}
+						      <div class="flash">{{ message }}</div>
+						    {% endfor %}
+						 
+						    {% for message in form.message.errors %}
+						      <div class="flash">{{ message }}</div>
+						    {% endfor %}
+
+						  <form action="{{ url_for('landpage') }}" method=post>
+						  <div class='row'>
+						  	<div class= '12u'>
+						    {{ form.hidden_tag() }}
+						 	<div class='row'>
+						 		<div class="6u 12u(mobile)">
+						    {{ form.name.label }}
+						    {{ form.name }}
+						 		</div>
+						 		<div class="6u 12u(mobile)">
+						    {{ form.email.label }}
+						    {{ form.email }}
+						    	</div>
+						 	</div>
+						    {{ form.subject.label }}
+						    {{ form.subject }}
+						 
+						    {{ form.message.label }}
+						    {{ form.message }}
+						 <div class= 'row 200%'>
+						 	<div class='12u'>
+						 		<ul class='actions'>
+						 			<li href='#contact'>
+						    {{ form.submit }}
+						    		</li>
+						    		<li><input type="reset" value="Clear Form" class="alt" /></li>
+						    	</ul>
+						    </div>
+						 </div>
+						  </form>
+						  {% endif %}
+						  </div>
+						 </div>
+						{% endblock %}
+
+						<div class="row">
+							<div class="12u">
+								<hr />
+								<h3 id='find_me'>Find me on ...</h3>
+								<ul class="social">
+									<li><a href="https://www.facebook.com/timi.bennatan" target='_blank' class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://ca.linkedin.com/in/tamirbennatan" target='_blank' class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/tamirbennatan" target='_blank' class="icon fa-github"><span class="label">Github</span></a></li>
+									<li><a href="https://instagram.com/timib1203/" target='_blank' class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.youtube.com/user/YouMyFreind" target= '_blank' class="icon fa-youtube"><span></span></a></li>
+									
+								</ul>
+								<hr />
+							</div>
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Tamir Bennatan. All rights reserved.</li>
+						</ul>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Scripts -->
+			<!-- <script src="assets/js/jquery.min.js"></script> -->
+			<script src="{{url_for('static', filename='landpage/assets/js/jquery.scrolly.min.js')}}"></script>
+			<script src="{{url_for('static', filename='landpage/assets/js/skel.min.js')}}"></script>
+			<script src="{{url_for('static', filename='landpage/assets/js/skel-viewport.min.js')}}"></script>
+			<script src="{{url_for('static', filename='landpage/assets/js/util.js')}}"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{{url_for('static', filename='landpage/assets/js/main.js')}}"></script>
+
+	</body>
+</html>
